@@ -1,0 +1,22 @@
+.a
+h1{
+color: rgb(247, 75, 7);
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+p>span {
+    color: rgb(14, 246, 41);
+
+}
+
+h3 {
+    color: rgb(13, 10, 228);
+}
+div.a {
+    font-size: larger;
+    text-align: left ;
+    padding-left: 40%;
+    padding-top: 2ex;
+}
