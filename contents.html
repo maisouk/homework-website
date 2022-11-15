@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+<style type="text/css">
+#piechart {
+  margin-left: auto;
+  margin-right: auto;
+  width: 26em;
+}
+.button {
+  float: right;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #000;
+  color: white;
+  border: 2px solid #e7e7e7;
+}
+.button1:hover {opacity: 0.7;}
+</style>
+<a href="index.html"><button class="button button1">Log out</button></a>
+<h1 style="text-align: center;">Most used programming languages among developers worldwide as of 2022</h1>
+<div id="piechart"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task',''],
+  ['JavaScript', 8],
+  ['html&css', 7],
+  ['SQl', 6],
+  ['Python', 5],
+  ['Java', 4],
+  ['C++', 3]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
